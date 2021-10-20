@@ -11,11 +11,15 @@ set(HEADER_FILES
     include/inviwo/openmesh/openmeshmoduledefine.h
     include/inviwo/openmesh/openmeshreader.h
     include/inviwo/openmesh/openmeshwriter.h
+    include/inviwo/openmesh/processors/hclaplaciansmootherprocessor.h
     include/inviwo/openmesh/processors/meshdecimationprocessor.h
     include/inviwo/openmesh/processors/meshsequencedecimationprocessor.h
+    include/inviwo/openmesh/processors/taubinsmootherprocessor.h
     include/inviwo/openmesh/processors/vertexnormals.h
     include/inviwo/openmesh/utils/meshdecimation.h
+    include/inviwo/openmesh/utils/meshsmoother.h
     include/inviwo/openmesh/utils/openmeshconverters.h
+    include/inviwo/openmesh/utils/meshotherutils.h
 )
 ivw_group("Header Files" ${HEADER_FILES})
 
@@ -25,11 +29,15 @@ set(SOURCE_FILES
     src/openmeshmodule.cpp
     src/openmeshreader.cpp
     src/openmeshwriter.cpp
+    src/processors/hclaplaciansmootherprocessor.cpp
     src/processors/meshdecimationprocessor.cpp
     src/processors/meshsequencedecimationprocessor.cpp
+    src/processors/taubinsmootherprocessor.cpp
     src/processors/vertexnormals.cpp
     src/utils/meshdecimation.cpp
+    src/utils/meshsmoother.cpp
     src/utils/openmeshconverters.cpp
+    src/utils/meshotherutils.cpp
 )
 ivw_group("Source Files" ${SOURCE_FILES})
 
